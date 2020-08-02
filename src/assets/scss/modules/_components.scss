@@ -1,0 +1,38 @@
+/* Carousel */
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel img{
+  padding: 3px;
+  @include add-border(1px, #cccccc, all);
+}
+
+/* Tabs */
+.tab-pane {
+  padding: 20px 10px;
+  //@include border-radius(5px);
+  margin-top: -16px;
+  margin-bottom: 20px;
+}
+
+.tab-primary .tab-content, .tab-primary .tab-content .tab-pane, .nav-tabs .nav-link:hover, .tab-primary .nav-tabs .nav-link:focus {
+  @include add-background($primary-color);
+  @include border-radius(5px);
+}
+
+.tab-secondary .tab-content, .tab-secondary .tab-content .tab-pane, .nav-tabs .nav-link:hover, .tab-secondary .nav-tabs .nav-link:focus {
+  @include add-background($secondary-color);
+  @include border-radius(5px);
+}
+
+.tab-dark .tab-content, .tab-dark .tab-content .tab-pane, .nav-tabs .nav-link:hover, .tab-dark .nav-tabs .nav-link:focus {
+  @include add-background($dark-color);
+  @include border-radius(5px);
+}
+
+.tab-light .tab-content, .tab-light .tab-content .tab-pane, .nav-tabs .nav-link:hover, .tab-light .nav-tabs .nav-link:focus {
+  @include add-background($light-color);
+  @include border-radius(5px);
+}
